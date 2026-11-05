@@ -1,86 +1,104 @@
-<p align="center">
-  <img src="assets/banner.svg" alt="KeyBridge - Seu teclado. Seu controle." width="100%">
+<div align="center">
+
+<img src="assets/banner.svg" width="100%" alt="KeyBridge — Seu teclado. Seu controle.">
+
+<br>
+
+**Transforme comandos do teclado em ações de um controle virtual no Windows.**
+
+<p>
+<img alt="Windows" src="https://img.shields.io/badge/plataforma-Windows-111a2c?style=for-the-badge&logo=windows11&logoColor=white">
+<img alt="Interface" src="https://img.shields.io/badge/interface-WebView2-1d4ed8?style=for-the-badge">
+<img alt="Versão" src="https://img.shields.io/badge/release-em%20prepara%C3%A7%C3%A3o-334155?style=for-the-badge">
 </p>
 
-<p align="center">
-  <a href="https://github.com/Reivison009/KeyBridge/releases/latest"><img alt="Versão mais recente" src="https://img.shields.io/github/v/release/Reivison009/KeyBridge?display_name=tag&style=flat-square&color=2563eb&label=vers%C3%A3o"></a>
-  <a href="https://github.com/Reivison009/KeyBridge/releases"><img alt="Total de downloads" src="https://img.shields.io/github/downloads/Reivison009/KeyBridge/total?style=flat-square&color=475569&label=downloads"></a>
-  <img alt="Plataforma Windows" src="https://img.shields.io/badge/plataforma-Windows-111827?style=flat-square&logo=windows11&logoColor=white">
-  <a href="https://github.com/Reivison009/KeyBridge/issues"><img alt="Relatar um problema" src="https://img.shields.io/badge/suporte-Issues-111827?style=flat-square&logo=github&logoColor=white"></a>
-</p>
+[**DOWNLOADS**](https://github.com/Reivison009/KeyBridge/releases) · [**GUIA DE USO**](docs/GUIA-DE-USO.md) · [**ROADMAP**](docs/ROADMAP.md) · [**SUPORTE**](https://github.com/Reivison009/KeyBridge/issues/new/choose)
 
-<p align="center">
-  <strong>Seu teclado. Seu controle.</strong><br>
-  Uma interface simples para mapear teclas e utilizar controles virtuais no Windows.
-</p>
-
-<p align="center">
-  <a href="https://github.com/Reivison009/KeyBridge/releases/latest"><strong>Baixar a versão mais recente</strong></a>
-  &nbsp;·&nbsp;
-  <a href="#como-instalar">Instalação</a>
-  &nbsp;·&nbsp;
-  <a href="#atualizações">Atualizações</a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/Reivison009/KeyBridge/issues">Suporte</a>
-</p>
+</div>
 
 ---
 
 ## O que é o KeyBridge?
 
-O **KeyBridge** é um projeto para Windows com foco em configuração de teclas e controle virtual. A ideia é deixar o mapeamento acessível, com uma interface direta e sem configurações desnecessariamente complicadas.
+O **KeyBridge Studio** é um projeto para Windows que permite configurar teclas do computador para controlar uma entrada virtual compatível com jogos e aplicativos. O projeto enviado inclui um motor em **C/C++**, interface própria em **HTML, CSS e JavaScript** e integração com **WebView2** e **ViGEm**.
 
-### Destaques do projeto
+O objetivo é facilitar o mapeamento sem obrigar o usuário a editar arquivos de configuração manualmente.
 
-- **Mapeamento de teclas:** configure ações e botões de controle.
-- **Perfis:** organize configurações para diferentes usos, conforme a versão instalada.
-- **Interface moderna:** navegação e controles em uma janela própria.
-- **Distribuição simples:** obtenha o executável oficial pela seção *Releases*.
+## Interface
 
-> **Nota:** os recursos disponíveis dependem da versão publicada. Consulte as notas de lançamento para saber o que está funcionando em cada atualização.
+<p align="center">
+  <img src="assets/interface-preview.svg" width="100%" alt="Prévia ilustrativa do painel KeyBridge">
+</p>
 
-## Download
+<p align="center"><sub>Representação ilustrativa baseada na organização da interface do projeto. Não é uma captura de tela do programa em execução.</sub></p>
 
-A versão oficial fica em **Releases**, não no botão verde **Code**.
+## Recursos do projeto
 
-**[Acessar downloads e versões](https://github.com/Reivison009/KeyBridge/releases/latest)**
+| Módulo | Funcionalidade |
+| :--- | :--- |
+| **Visão geral** | Iniciar e parar o controle virtual, acompanhar a atividade |
+| **Mapeamento** | Configurar teclas, recarregar, salvar e restaurar o padrão |
+| **Perfis** | Criar, carregar e alternar configurações por jogo |
+| **Ferramentas** | Diagnóstico, teste de botão, logs e acesso ao instalador do driver |
+| **Instalação inicial** | Escolher onde os recursos internos do programa serão extraídos |
 
-| Informação | Detalhes |
-| --- | --- |
-| Sistema | Windows |
-| Formato | Executável `.exe` |
-| Versão | Consulte a release mais recente |
-| Histórico | [Ver todas as versões](https://github.com/Reivison009/KeyBridge/releases) |
+Esses recursos foram identificados nos arquivos fornecidos do KeyBridge Studio 9.0. **Eles ainda não representam um certificado de testes em todas as máquinas.**
 
-## Como instalar
+### Exemplo de mapeamento inicial
 
-1. Abra a página de [lançamentos](https://github.com/Reivison009/KeyBridge/releases/latest).
-2. Em **Assets**, baixe o arquivo `.exe` publicado.
-3. Execute o aplicativo e siga as instruções da versão.
-4. Caso o aplicativo solicite um componente do Windows, instale-o apenas pelo site oficial da Microsoft.
+| Teclas | Função |
+| :--- | :--- |
+| `W` `A` `S` `D` | Movimento do analógico esquerdo |
+| `J` `K` `L` `U` | Botões A, B, X e Y |
+| `Shift` / `Enter` | LB / RB |
+| `Q` / `E` | LT / RT |
+| `Espaço` / `Backspace` | START / BACK |
 
-> Se ainda não houver releases, o aplicativo ainda não foi disponibilizado para download.
+**[Ver guia de configuração completo →](docs/GUIA-DE-USO.md)**
 
-## Atualizações
+## Download e instalação
 
-Novas versões serão publicadas com identificadores como `v1.0.0`, `v1.1.0` e `v1.2.0`.
+> **Status:** nenhuma release pública foi publicada até a última verificação. O botão abaixo levará às versões assim que forem disponibilizadas.
 
-A API oficial do GitHub para consultar a última versão deste projeto é:
+<p align="center">
+  <a href="https://github.com/Reivison009/KeyBridge/releases">
+    <img alt="Ver versões e downloads" src="https://img.shields.io/badge/VER%20VERS%C3%95ES%20E%20DOWNLOADS-2563eb?style=for-the-badge&logo=github&logoColor=white">
+  </a>
+</p>
 
-```text
-https://api.github.com/repos/Reivison009/KeyBridge/releases/latest
-```
+Quando uma versão estiver disponível:
 
-Essa API pode ser utilizada pelo aplicativo **quando a verificação de atualizações estiver implementada**. Publicar uma release não atualiza automaticamente um programa já instalado.
+1. Abra a página [Releases](https://github.com/Reivison009/KeyBridge/releases).
+2. Na versão desejada, localize **Assets** e baixe `KeyBridge.exe`.
+3. Execute o aplicativo e siga as instruções de instalação.
+4. Se solicitado, instale os componentes necessários por suas fontes oficiais.
 
-Consulte também [como publicar uma atualização](docs/PUBLICAR-ATUALIZACAO.md) e o [histórico de mudanças](CHANGELOG.md).
+O projeto utiliza **WebView2 Runtime** para exibir a interface e **ViGEmBus** para o controle virtual. [Confira os requisitos e dependências](docs/REQUISITOS.md).
 
-## Problemas e sugestões
+## Desenvolvimento e atualizações
 
-Encontrou um problema ou tem uma ideia? [Abra uma issue](https://github.com/Reivison009/KeyBridge/issues) e informe a versão do aplicativo, o comportamento esperado e o que aconteceu.
+O planejamento está disponível no [**Roadmap do KeyBridge**](docs/ROADMAP.md). As próximas prioridades são publicar a primeira release testada, validar a instalação em diferentes máquinas e implementar a verificação de atualizações pelo GitHub.
+
+Para quem publica versões:
+
+- [Guia de publicação do EXE](docs/PUBLICAR-ATUALIZACAO.md)
+- [Histórico de alterações](CHANGELOG.md)
+- [Política de segurança](SECURITY.md)
+
+> A API de releases do GitHub está disponível, mas o recurso de atualização automática do EXE ainda precisa ser implementado e testado.
+
+## Suporte e sugestões
+
+Encontrou um erro ou tem uma ideia? Use os formulários prontos:
+
+- [**Reportar um bug**](https://github.com/Reivison009/KeyBridge/issues/new/choose)
+- [**Sugerir uma funcionalidade**](https://github.com/Reivison009/KeyBridge/issues/new/choose)
+
+Inclua a versão do programa, o que você fez e o resultado observado. Antes de enviar logs, remova dados pessoais.
 
 ---
 
-<p align="center">
-  Feito por <a href="https://github.com/Reivison009"><strong>Reivison009</strong></a> · KeyBridge
-</p>
+<div align="center">
+  <strong>KeyBridge Studio</strong><br>
+  <sub>Projeto de <a href="https://github.com/Reivison009">Reivison009</a> · Seu teclado. Seu controle.</sub>
+</div>
