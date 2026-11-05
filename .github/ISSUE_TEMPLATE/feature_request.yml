@@ -1,0 +1,24 @@
+name: "Sugerir melhoria"
+description: "Proponha um recurso para o KeyBridge."
+title: "[Sugestão] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Qual problema essa melhoria resolve?"
+      placeholder: "Descreva o problema de uso atual."
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: "Como você imagina a solução?"
+      placeholder: "Explique a melhoria e como gostaria que funcionasse."
+    validations:
+      required: true
+  - type: textarea
+    id: other
+    attributes:
+      label: "Informações adicionais"
+      description: "Adicione detalhes opcionais."
