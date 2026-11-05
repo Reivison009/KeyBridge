@@ -1,0 +1,22 @@
+# Arquivos gerados ao compilar
+engine/build/
+dist/
+*.o
+*.obj
+*.pdb
+*.ilk
+*.log
+
+# SDK obtido pelo script baixar-webview2-sdk.ps1
+sdk/
+
+# Dados locais de execução
+profiles/
+*.user
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Ferramentas e editores
+.vscode/
+.idea/
