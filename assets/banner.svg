@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#071124"/><stop offset="1" stop-color="#06346e"/></linearGradient><linearGradient id="accent"><stop stop-color="#00bbff"/><stop offset="1" stop-color="#3565ff"/></linearGradient></defs>
+<rect width="1280" height="640" rx="32" fill="url(#bg)"/>
+<path d="M0 540 Q300 445 610 548 T1280 490" fill="none" stroke="#087dff" stroke-width="3" opacity=".65"/>
+<path d="M0 585 Q340 520 740 604 T1280 548" fill="none" stroke="#1d66dd" stroke-width="2" opacity=".35"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="78" y="132" fill="#8ab6e8" font-size="26" letter-spacing="6">WINDOWS UTILITY</text>
+<text x="72" y="302" fill="white" font-size="108" font-weight="bold">KeyBridge</text>
+<rect x="80" y="336" width="105" height="8" rx="4" fill="#00b5ff"/>
+<text x="78" y="409" fill="#c8dff9" font-size="35">Seu teclado. Seu controle.</text>
+<text x="78" y="460" fill="#8eafd6" font-size="25">Mapeamento de teclas para controle virtual.</text>
+</g>
+<g transform="translate(830 166)">
+<rect x="0" y="0" width="104" height="104" rx="17" fill="#16365a" stroke="#1598ff" stroke-width="3"/>
+<rect x="119" y="0" width="104" height="104" rx="17" fill="#16365a" stroke="#1598ff" stroke-width="3"/>
+<rect x="238" y="0" width="104" height="104" rx="17" fill="#16365a" stroke="#1598ff" stroke-width="3"/>
+<rect x="119" y="119" width="104" height="104" rx="17" fill="#16365a" stroke="#1598ff" stroke-width="3"/>
+<g font-family="Arial" font-size="54" fill="white" text-anchor="middle"><text x="52" y="70">A</text><text x="171" y="70">W</text><text x="290" y="70">D</text><text x="171" y="191">S</text></g>
+<text x="170" y="273" font-family="Arial" font-size="22" letter-spacing="3" fill="#90b9e9" text-anchor="middle">KEYBOARD → CONTROLLER</text>
+</g></svg>
