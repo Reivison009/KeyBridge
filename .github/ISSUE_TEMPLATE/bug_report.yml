@@ -1,0 +1,50 @@
+name: "Relatar bug"
+description: "Informe um problema encontrado no KeyBridge."
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: "Versão do KeyBridge"
+      placeholder: "Ex.: v1.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: module
+    attributes:
+      label: "Onde aconteceu?"
+      options:
+        - "Início / Visão geral"
+        - "Mapeamento"
+        - "Perfis"
+        - "Ferramentas / diagnóstico"
+        - "Instalação"
+        - "Outro"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Passos para reproduzir"
+      description: "Descreva o que fez, sem incluir senhas ou tokens."
+      placeholder: "1. Abri o aplicativo\n2. Cliquei em...\n3. Apareceu..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Comportamento esperado"
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: "O que aconteceu?"
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: "Ambiente"
+      description: "Windows, driver e mensagens de erro. Remova informações pessoais dos logs."
