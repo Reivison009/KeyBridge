@@ -6,65 +6,64 @@
 
 **Seu teclado. Um novo controle.**
 
-Aplicativo para Windows que converte teclas em entradas de um controle Xbox 360 virtual.
+Mapeie o teclado para um controle Xbox 360 virtual no Windows.
 
-[**BAIXAR**](https://github.com/Reivison009/KeyBridge/releases) · [**GUIA DE USO**](docs/GUIA-DE-USO.md) · [**REQUISITOS**](docs/REQUISITOS.md) · [**SUPORTE**](https://github.com/Reivison009/KeyBridge/issues/new/choose)
+[Download](https://github.com/Reivison009/KeyBridge/releases) · [Guia de uso](docs/GUIA-DE-USO.md) · [Requisitos](docs/REQUISITOS.md) · [Reportar problema](https://github.com/Reivison009/KeyBridge/issues/new/choose)
 
 </div>
 
 ---
 
-## Conheça o aplicativo
+## Sobre
 
-O **KeyBridge Studio** permite configurar teclas para controlar jogos e aplicativos que aceitam um gamepad virtual. A interface inclui painel de controle, editor de mapeamentos, perfis por jogo e ferramentas de diagnóstico.
+O KeyBridge foi criado para quem precisa usar o teclado em jogos que oferecem suporte a controle. Você escolhe as teclas, ajusta o mapeamento e inicia o controle virtual pela própria interface.
 
-### Recursos
+O aplicativo conta com quatro áreas:
 
-- **Visão geral:** iniciar/parar o controle virtual e acompanhar seu estado.
-- **Mapeamento:** editar e salvar comandos no formato JSON.
-- **Perfis:** criar e carregar configurações diferentes por jogo.
-- **Ferramentas:** diagnóstico, registro de atividade e gerenciamento do driver.
-- **Monitor em tempo real:** visualizar entradas e posição do analógico.
+- **Visão geral:** conexão do controle, estado do driver e monitoramento das entradas.
+- **Mapeamento:** configuração das teclas em JSON, com opções para salvar e restaurar.
+- **Perfis:** configurações separadas para diferentes jogos.
+- **Ferramentas:** diagnóstico, teste de botões e acesso aos registros do aplicativo.
 
-### Capturas de tela
+## Interface
 
-As capturas reais do **KeyBridge Studio 9.1** foram fornecidas pelo desenvolvedor. A inclusão das imagens no repositório está pendente.
+O KeyBridge Studio 9.1 utiliza uma interface escura, com navegação lateral e detalhes em verde. As capturas de tela dessa versão serão adicionadas ao repositório.
 
-## Downloads
+## Download
 
-[**Ver versões disponíveis no GitHub Releases**](https://github.com/Reivison009/KeyBridge/releases)
+As versões publicadas ficam na página de [Releases](https://github.com/Reivison009/KeyBridge/releases).
 
-| Versão | Status |
+| Versão | Disponibilidade |
 | --- | --- |
-| **9.0** | Publicada com o arquivo `KeyBridge.exe` |
-| **9.1 (x64 e x86)** | Executáveis preparados; **ainda não publicados no Releases** |
+| **9.0** | Disponível para download |
+| **9.1** | Em preparação, com arquivos separados para 32 e 64 bits |
 
-> **Importante:** a arquitetura do executável da versão 9.0 não foi confirmada. Não renomeie esse arquivo como x64 ou x86 sem verificá-lo.
+A versão 9.1 terá dois downloads:
 
-Os novos executáveis da versão 9.1 são:
-- `KeyBridge-x64.exe`: Windows 64 bits (x86-64).
-- `KeyBridge-x86.exe`: Windows 32 bits (x86).
+- `KeyBridge-x64.exe` — Windows 64 bits
+- `KeyBridge-x86.exe` — Windows 32 bits
 
-**A versão 9.1 ainda não está disponível para download pelo GitHub.** Confira [a preparação da publicação](docs/RELEASE-9.1.md).
+**Os arquivos da versão 9.1 ainda não foram enviados ao Releases.** A versão 9.0 continua disponível.
 
-## Requisitos
+## Antes de usar
 
-O aplicativo usa componentes relacionados a **WebView2** e **ViGEmBus**. A compatibilidade efetiva depende da versão do Windows, da instalação das dependências e dos testes no sistema de destino.
+O KeyBridge utiliza **WebView2** para a interface e **ViGEmBus** para criar o controle virtual. Dependendo do computador, pode ser necessário instalar esses componentes.
 
-[Consulte os requisitos](docs/REQUISITOS.md). Jogos com mecanismos anticheat podem restringir controles virtuais; o KeyBridge não se destina a contornar essas proteções.
+Nem todos os jogos aceitam controles virtuais. O aplicativo não foi desenvolvido para contornar sistemas anticheat.
 
-## Segurança e transparência
+Para configurar as teclas, consulte o [guia de uso](docs/GUIA-DE-USO.md).
 
-Baixe somente os executáveis publicados neste repositório. Confira os hashes SHA-256 antes de executar arquivos distribuídos por terceiros. O formato de um executável e sua arquitetura **não comprovam que ele está livre de malware**.
+## Projeto
 
-## Documentação
-
-- [Guia de uso](docs/GUIA-DE-USO.md)
-- [Roadmap](docs/ROADMAP.md)
-- [Histórico de versões](CHANGELOG.md)
+- [Novidades e versões](CHANGELOG.md)
+- [Próximas melhorias](docs/ROADMAP.md)
 - [Preparação da versão 9.1](docs/RELEASE-9.1.md)
-- [Política de segurança](SECURITY.md)
+- [Segurança](SECURITY.md)
+
+Encontrou um erro? [Abra uma issue](https://github.com/Reivison009/KeyBridge/issues/new/choose) com a versão utilizada, o que aconteceu e, se possível, como reproduzir o problema.
 
 ---
 
-<div align="center"><sub>KeyBridge Studio · Projeto de <a href="https://github.com/Reivison009">Reivison009</a></sub></div>
+<div align="center">
+<sub>Desenvolvido por <a href="https://github.com/Reivison009">Reivison009</a></sub>
+</div>
