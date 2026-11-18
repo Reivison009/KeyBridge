@@ -1,16 +1,18 @@
-# Histórico de atualizações
+# Histórico de versões
 
-## 9.1 — Preparação (não publicada)
+## 9.1 — Em preparação
 
-- Interface com painel principal, perfis por jogo, mapeamento JSON e ferramentas, conforme capturas fornecidas.
-- Executáveis separados para Windows **x64** e **x86** recebidos para distribuição.
-- Arquiteturas verificadas por cabeçalho PE.
-- Testes funcionais no Windows e publicação no GitHub Releases ainda pendentes.
+- Novo visual do KeyBridge Studio.
+- Painel de controle com monitoramento das entradas.
+- Editor de mapeamento em JSON.
+- Perfis de configuração por jogo.
+- Área de ferramentas com diagnóstico e logs.
+- Executáveis separados para Windows 32 e 64 bits.
 
-## 9.0 — Publicada em 5 de novembro de 2026
+Os arquivos da versão 9.1 ainda não foram publicados no GitHub Releases. Os testes em Windows também estão pendentes.
 
-- Release **KeyBridge Studio 9.0** disponível no GitHub.
-- Arquivo distribuído: `KeyBridge.exe`.
-- A arquitetura do executável 9.0 não foi verificada.
+## 9.0 — 05/11/2026
 
-[Ver releases](https://github.com/Reivison009/KeyBridge/releases).
+- Versão publicada com o arquivo `KeyBridge.exe`.
+
+[Ver downloads](https://github.com/Reivison009/KeyBridge/releases).
