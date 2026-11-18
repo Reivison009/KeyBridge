@@ -27,7 +27,25 @@ O aplicativo conta com quatro áreas:
 
 ## Interface
 
-O KeyBridge Studio 9.1 utiliza uma interface escura, com navegação lateral e detalhes em verde. As capturas de tela dessa versão serão adicionadas ao repositório.
+Prévia vetorial das telas do KeyBridge Studio 9.1, baseada na interface do aplicativo.
+
+### Visão geral
+
+![Visão geral do KeyBridge Studio](assets/dashboard.svg)
+
+### Mapeamento
+
+![Editor de mapeamento do KeyBridge](assets/mapping.svg)
+
+### Perfis
+
+![Perfis por jogo do KeyBridge](assets/profiles.svg)
+
+### Ferramentas
+
+![Ferramentas do KeyBridge](assets/tools.svg)
+
+<sub>As imagens acima são recriações em SVG da interface, não capturas de tela idênticas.</sub>
 
 ## Download
 
