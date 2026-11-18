@@ -1,104 +1,70 @@
 <div align="center">
 
-<img src="assets/banner.svg" width="100%" alt="KeyBridge — Seu teclado. Seu controle.">
+<img src="assets/banner.svg" width="100%" alt="KeyBridge Studio">
 
-<br>
+# KeyBridge Studio
 
-**Transforme comandos do teclado em ações de um controle virtual no Windows.**
+**Seu teclado. Um novo controle.**
 
-<p>
-<img alt="Windows" src="https://img.shields.io/badge/plataforma-Windows-111a2c?style=for-the-badge&logo=windows11&logoColor=white">
-<img alt="Interface" src="https://img.shields.io/badge/interface-WebView2-1d4ed8?style=for-the-badge">
-<img alt="Versão" src="https://img.shields.io/badge/release-em%20prepara%C3%A7%C3%A3o-334155?style=for-the-badge">
-</p>
+Aplicativo para Windows que converte teclas em entradas de um controle Xbox 360 virtual.
 
-[**DOWNLOADS**](https://github.com/Reivison009/KeyBridge/releases) · [**GUIA DE USO**](docs/GUIA-DE-USO.md) · [**ROADMAP**](docs/ROADMAP.md) · [**SUPORTE**](https://github.com/Reivison009/KeyBridge/issues/new/choose)
+[**BAIXAR**](https://github.com/Reivison009/KeyBridge/releases) · [**GUIA DE USO**](docs/GUIA-DE-USO.md) · [**REQUISITOS**](docs/REQUISITOS.md) · [**SUPORTE**](https://github.com/Reivison009/KeyBridge/issues/new/choose)
 
 </div>
 
 ---
 
-## O que é o KeyBridge?
+## Conheça o aplicativo
 
-O **KeyBridge Studio** é um projeto para Windows que permite configurar teclas do computador para controlar uma entrada virtual compatível com jogos e aplicativos. O projeto enviado inclui um motor em **C/C++**, interface própria em **HTML, CSS e JavaScript** e integração com **WebView2** e **ViGEm**.
+O **KeyBridge Studio** permite configurar teclas para controlar jogos e aplicativos que aceitam um gamepad virtual. A interface inclui painel de controle, editor de mapeamentos, perfis por jogo e ferramentas de diagnóstico.
 
-O objetivo é facilitar o mapeamento sem obrigar o usuário a editar arquivos de configuração manualmente.
+### Recursos
 
-## Interface
+- **Visão geral:** iniciar/parar o controle virtual e acompanhar seu estado.
+- **Mapeamento:** editar e salvar comandos no formato JSON.
+- **Perfis:** criar e carregar configurações diferentes por jogo.
+- **Ferramentas:** diagnóstico, registro de atividade e gerenciamento do driver.
+- **Monitor em tempo real:** visualizar entradas e posição do analógico.
 
-<p align="center">
-  <img src="assets/interface-preview.svg" width="100%" alt="Prévia ilustrativa do painel KeyBridge">
-</p>
+### Capturas de tela
 
-<p align="center"><sub>Representação ilustrativa baseada na organização da interface do projeto. Não é uma captura de tela do programa em execução.</sub></p>
+As capturas reais do **KeyBridge Studio 9.1** foram fornecidas pelo desenvolvedor. A inclusão das imagens no repositório está pendente.
 
-## Recursos do projeto
+## Downloads
 
-| Módulo | Funcionalidade |
-| :--- | :--- |
-| **Visão geral** | Iniciar e parar o controle virtual, acompanhar a atividade |
-| **Mapeamento** | Configurar teclas, recarregar, salvar e restaurar o padrão |
-| **Perfis** | Criar, carregar e alternar configurações por jogo |
-| **Ferramentas** | Diagnóstico, teste de botão, logs e acesso ao instalador do driver |
-| **Instalação inicial** | Escolher onde os recursos internos do programa serão extraídos |
+[**Ver versões disponíveis no GitHub Releases**](https://github.com/Reivison009/KeyBridge/releases)
 
-Esses recursos foram identificados nos arquivos fornecidos do KeyBridge Studio 9.0. **Eles ainda não representam um certificado de testes em todas as máquinas.**
+| Versão | Status |
+| --- | --- |
+| **9.0** | Publicada com o arquivo `KeyBridge.exe` |
+| **9.1 (x64 e x86)** | Executáveis preparados; **ainda não publicados no Releases** |
 
-### Exemplo de mapeamento inicial
+> **Importante:** a arquitetura do executável da versão 9.0 não foi confirmada. Não renomeie esse arquivo como x64 ou x86 sem verificá-lo.
 
-| Teclas | Função |
-| :--- | :--- |
-| `W` `A` `S` `D` | Movimento do analógico esquerdo |
-| `J` `K` `L` `U` | Botões A, B, X e Y |
-| `Shift` / `Enter` | LB / RB |
-| `Q` / `E` | LT / RT |
-| `Espaço` / `Backspace` | START / BACK |
+Os novos executáveis da versão 9.1 são:
+- `KeyBridge-x64.exe`: Windows 64 bits (x86-64).
+- `KeyBridge-x86.exe`: Windows 32 bits (x86).
 
-**[Ver guia de configuração completo →](docs/GUIA-DE-USO.md)**
+**A versão 9.1 ainda não está disponível para download pelo GitHub.** Confira [a preparação da publicação](docs/RELEASE-9.1.md).
 
-## Download e instalação
+## Requisitos
 
-> **Status:** nenhuma release pública foi publicada até a última verificação. O botão abaixo levará às versões assim que forem disponibilizadas.
+O aplicativo usa componentes relacionados a **WebView2** e **ViGEmBus**. A compatibilidade efetiva depende da versão do Windows, da instalação das dependências e dos testes no sistema de destino.
 
-<p align="center">
-  <a href="https://github.com/Reivison009/KeyBridge/releases">
-    <img alt="Ver versões e downloads" src="https://img.shields.io/badge/VER%20VERS%C3%95ES%20E%20DOWNLOADS-2563eb?style=for-the-badge&logo=github&logoColor=white">
-  </a>
-</p>
+[Consulte os requisitos](docs/REQUISITOS.md). Jogos com mecanismos anticheat podem restringir controles virtuais; o KeyBridge não se destina a contornar essas proteções.
 
-Quando uma versão estiver disponível:
+## Segurança e transparência
 
-1. Abra a página [Releases](https://github.com/Reivison009/KeyBridge/releases).
-2. Na versão desejada, localize **Assets** e baixe `KeyBridge.exe`.
-3. Execute o aplicativo e siga as instruções de instalação.
-4. Se solicitado, instale os componentes necessários por suas fontes oficiais.
+Baixe somente os executáveis publicados neste repositório. Confira os hashes SHA-256 antes de executar arquivos distribuídos por terceiros. O formato de um executável e sua arquitetura **não comprovam que ele está livre de malware**.
 
-O projeto utiliza **WebView2 Runtime** para exibir a interface e **ViGEmBus** para o controle virtual. [Confira os requisitos e dependências](docs/REQUISITOS.md).
+## Documentação
 
-## Desenvolvimento e atualizações
-
-O planejamento está disponível no [**Roadmap do KeyBridge**](docs/ROADMAP.md). As próximas prioridades são publicar a primeira release testada, validar a instalação em diferentes máquinas e implementar a verificação de atualizações pelo GitHub.
-
-Para quem publica versões:
-
-- [Guia de publicação do EXE](docs/PUBLICAR-ATUALIZACAO.md)
-- [Histórico de alterações](CHANGELOG.md)
+- [Guia de uso](docs/GUIA-DE-USO.md)
+- [Roadmap](docs/ROADMAP.md)
+- [Histórico de versões](CHANGELOG.md)
+- [Preparação da versão 9.1](docs/RELEASE-9.1.md)
 - [Política de segurança](SECURITY.md)
 
-> A API de releases do GitHub está disponível, mas o recurso de atualização automática do EXE ainda precisa ser implementado e testado.
-
-## Suporte e sugestões
-
-Encontrou um erro ou tem uma ideia? Use os formulários prontos:
-
-- [**Reportar um bug**](https://github.com/Reivison009/KeyBridge/issues/new/choose)
-- [**Sugerir uma funcionalidade**](https://github.com/Reivison009/KeyBridge/issues/new/choose)
-
-Inclua a versão do programa, o que você fez e o resultado observado. Antes de enviar logs, remova dados pessoais.
-
 ---
 
-<div align="center">
-  <strong>KeyBridge Studio</strong><br>
-  <sub>Projeto de <a href="https://github.com/Reivison009">Reivison009</a> · Seu teclado. Seu controle.</sub>
-</div>
+<div align="center"><sub>KeyBridge Studio · Projeto de <a href="https://github.com/Reivison009">Reivison009</a></sub></div>
